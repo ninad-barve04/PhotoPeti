@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(170, 218, 221);">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PhotoPeti !! </title>
+</head>
+
+<body>
+    <div style="height:130px">
+        <div><img style="width:140px;float:left" src="/static/sandook.png" /></div>
+        <div style="float:left;margin-top:10px">
+            <h2>PhotoPeti, store your memories</h2>
+        </div>
+    </div>
+
+    <div style="width:100%">
+        <div style="float:left;width:40%">
+            <h3>Whats in your PhotoPeti</h3>
+
+            <div>
+                Ninad_file_here
+            </div>
+        </div>
+        <div style="float:left;width:8%">
+        </div>
+
+        <div style="width:40%;float:left">
+            <h3>Add more to PhotoPeti</h3>
+            <div>
+                <p>Add files..</p>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <!-- <form action="/upload" method="post"> -->
+                    <input required type="file" id="picture" name="picture"
+                        accept="image/png, image/jpeg, image/avif, image/webp, image/gif">
+                    <button name="submit">Add</button>
+                </form>
+                <br>
+                <p>OR</p>
+                <p>Add folder</p>
+                <form action="/addfolder" method="post" enctype="multipart/form-data">
+                    <input required type="text" name="foldername" id="foldername" value="" />
+                    <button name="submit">Add Folder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
