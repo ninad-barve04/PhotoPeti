@@ -1,3 +1,17 @@
+"""
+Computer Networks Assignment - 4
+Name: Ninad Milind Barve
+MIS: 112003016
+Div: 1
+Batch: T2
+
+
+
+server.py
+This file has the server code
+"""
+
+
 import socket
 import os
 
@@ -6,8 +20,8 @@ from server_funcs import *
 # Socket object for server
 ServerSocket = socket.socket()
 ServerSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-host = '192.168.0.109'
-#host = 'localhost'
+# host = '192.168.0.109'
+host = 'localhost'
 port = 8080
 
 try:
